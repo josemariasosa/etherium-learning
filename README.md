@@ -138,3 +138,19 @@ Truffle allow you to run scripts.
 ```bash
 truffle exec scripts/issue-tokens.js
 ```
+
+Now, let's build the client side of our Dapp. First, make sure that the server is running.
+
+```bash
+npm run start
+```
+
+That's going to start a server and open a tab in the web browser. Then, we will create a **React** component. This is where all the code `./scr/components/App.js` is.
+
+How to connect with Metamask
+
+1. Connect to a new RPC network.
+2. Give the network a new name.
+3. RPC SERVER HTTP://127.0.0.1:7545 (for Ganache).
+4. Use the ChainId NETWORK ID 5777 (for Ganache).
+5. Import the new Account using the private key.
