@@ -133,6 +133,22 @@ In order to test your contracts, run:
 truffle test
 ```
 
+Important: whenever you are running test, let's check the first lines of code from our test:
+
+```js
+const Decentragram = artifacts.require('./Decentragram.sol')
+
+require('chai')
+  .use(require('chai-as-promised'))
+  .should()
+
+contract('Decentragram', ([deployer, author, tipper]) => {
+    ...
+}
+```
+
+Check how the contract 2nd argument is a function that send as argument a list of accounts taken from Ganache. The list of accounts is unpacked into the variable names.
+
 Truffle allow you to run scripts.
 
 ```bash
@@ -154,3 +170,6 @@ How to connect with Metamask
 3. RPC SERVER HTTP://127.0.0.1:7545 (for Ganache).
 4. Use the ChainId NETWORK ID 5777 (for Ganache).
 5. Import the new Account using the private key.
+
+## Creating Decentragram `/template_decentragram`
+
