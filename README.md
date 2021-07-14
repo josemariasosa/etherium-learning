@@ -173,3 +173,22 @@ How to connect with Metamask
 
 ## Creating Decentragram `/template_decentragram`
 
+## MakerDAO `/template_dai`
+
+Start a new project using truffle.
+
+```bash
+truffle init
+```
+
+In order to install OpenZeppelin, first you need to start npm to create the `package.json` file.
+
+```bash
+npm init
+```
+
+After the file is created, then run,
+
+```bash
+npm install @openzeppelin/contracts
+```
